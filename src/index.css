@@ -1,0 +1,435 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  background-color: #EDF1F5;
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 40px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.horizontal-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.pharmacy-text {
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: #194C98;
+}
+
+.auth-container {
+  background-color: white;
+  box-shadow: 0px 0px 30px 10px rgb(235, 235, 235);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.main-login-container {
+  width: 475px;
+}
+
+.main-register-container {
+  width: 800px;
+}
+
+
+.input {
+  width: 100%;
+  background-color: #EDF1F5;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #EDF1F5;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+.blue-button {
+  width: 100%;
+  height: 60px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 14px;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  background-color: #194C98;
+}
+
+.blue-text-button {
+  font-size: 15px;
+  color: #194C98;
+  border: none;
+  background-color: white;
+  margin-top: 20px;
+}
+
+
+
+.register-border-line-separator {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+
+.horizontal-padding {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.vertical-padding {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pharmacist-container {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.pharmacist-pane-container {
+  /* width: 45%; */
+}
+
+.drug-search-input {
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.pharmacist-drugs-search-results {
+  width: 100%;
+  height: 100%;
+}
+
+.pharmacist-drugs-keys {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.prescrption-c {
+  height: 100%;
+}
+
+.drug-key {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.drug-cell {
+  background-color: #EDF1F5;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.drug-cell-text {
+  font-size: 14px;
+}
+
+.drug-ID {
+  width: 30%;
+}
+
+.drug-name {
+  width: 50%;
+}
+
+.drug-category {
+  width: 20%;
+}
+
+.added-drug-quantity {
+  width: 20%;
+}
+
+.added-drug-name {
+  width: 30%;
+}
+
+.added-drug-usage {
+  width: 50%;
+}
+
+.add-button {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  border: none;
+  background-color: #194C98;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 10 rgb(219, 219, 219) px rgb(163, 163, 163);
+}
+
+.remove-button {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  border: none;
+  color: red;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 10 rgb(219, 219, 219) px rgb(163, 163, 163);
+}
+
+.prescription-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.prescription-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.prescription-container {
+  background-color: #EDF1F5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.horizontal-line {
+  background-color: gray;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.added-drug-cell {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.usage-input {
+  font-size: 12px;
+  border: none;
+  background-color: #EDF1F5;
+  border-radius: 4px;
+  margin-top: 3px;
+}
+
+.vertical-line {
+  background-color: gray;
+  width: 1px;
+}
+
+.prescription-details {
+  width: 45%;
+}
+
+.prescription-detail {
+  font-size: 14px;
+}
+
+.action-button {
+  color: white;
+  font-weight: 600;
+  width: 30%;
+  height: 50px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.082);
+}
+
+.price-check {
+  background-color: gray;
+}
+
+.discard {
+  background-color: red;
+}
+
+.update {
+  background-color: orangered;
+}
+
+.submit {
+  background-color: #194C98;
+}
+
+.width-70 {
+  width: 70%;
+}
+
+.width-30 {
+  width: 30%;
+}
+
+.width-35 {
+  width: 35%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: clamp(50%, 700px, 90%);
+  /* height: min(50%, 300px) */
+
+  margin: auto;
+  padding: 0 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-45 {
+  width: 45%;
+}
+
+.width-40 {
+  width: 40%;
+}
+
+.shadow {
+  box-shadow: 0 0 30px 30px rgb(233, 233, 233);
+}
+
+.light-shadow {
+  box-shadow: 0 0 30px 30px rgb(240, 240, 240);
+  border: 10px;
+  border-color: black;
+}
+
+.push-left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.horizontal-margin-40 {
+  margin-left: 40;
+  margin-right: 40;
+}
+
+.full-center {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+
+}
+
+.patient-name {}
+
+.patient-address {}
+
+.patient-keys {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.left {
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.patient-cell {
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  justify-content: space-between;
+}
+
+.select-patient {
+  color: white;
+  background-color: #194C98;
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
+  border: none;
+}
+
+.select-patient:hover,
+.discard:hover,
+.update:hover,
+.submit:hover {
+
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.search-border {
+  border-width: 10px;
+}

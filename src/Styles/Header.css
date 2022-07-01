@@ -1,0 +1,42 @@
+.header {
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 30px 10px rgb(235, 235, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.role {
+    color: gray;
+    font-size: small;
+}
+
+.logout {
+    background-color: #194C98;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    color: white;
+    height: 20px;
+    width: 20px;
+    transition: 0.3s;
+}
+
+.logout:hover {
+    color: #194C98;
+    background-color: white;
+    box-shadow: 0 0 10px 10px rgb(235, 235, 235);
+    transition: 0.3s;
+}
